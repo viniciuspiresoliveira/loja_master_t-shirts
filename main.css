@@ -1,0 +1,189 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 16px;
+    margin-bottom: 16px;
+}
+
+header {
+    border-bottom: 3px solid #3a5672;
+    background-color: rgb(43, 132, 111);
+    color: #fff;
+    position: sticky;
+}
+
+ul li {
+    list-style: none;
+    display: inline;
+    padding-left: 40px; 
+    font-size: 20px;
+}
+
+ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 32px;
+}
+
+#about img {
+    max-width: 360px;
+    width: 100%;
+}
+
+#about p {
+    padding-left: 16px;
+    text-align: justify;
+}
+
+#about h2 {
+    text-decoration: underline;
+    padding-bottom: 32px;
+    padding-left: 32px;
+}
+
+#product img {
+    max-width: 200px;
+    width: 100%;
+    max-height: 200px;
+}
+
+#product {
+    margin-top: 32px;
+}
+
+#product h2 {
+    text-decoration: underline;
+}
+
+.conteudo {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    padding: 16px;
+}
+
+.conteudo li {
+    margin-top: 16px;
+    text-align: center;
+    justify-content: center;
+}
+
+button {
+    margin-top: 2px;
+    padding: 5px;
+    cursor: pointer;
+    background-color: #318162;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+@media screen and (max-width: 767px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .conteudo img {
+        display: flex;
+        margin: 0 auto;
+    }
+
+    header ul {
+        text-align: right;
+    }
+
+    .conteudo {
+        display: block;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .conteudo li {
+        text-align: center;
+        justify-content: center;
+    }
+
+    button {
+        margin-bottom: 32px;
+        padding: 60px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-size: 16px;
+    }
+
+    .container {
+        max-width: 90%;
+    }
+
+    #about {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    #about {
+        display: block;
+    }
+
+    #about img {
+        max-width: 1023px;
+        width: 100%;
+    }
+
+    #about h2 {
+        text-decoration: underline;
+        padding-bottom: 32px;
+        padding-left: 0;
+    }
+
+    #about p {
+        padding-left: 0;
+    }
+
+    .container {
+        max-width: 90%;
+    }
+
+    #product img {
+        max-width: 200px;
+        width: 100%;
+        max-height: 180px;
+    }
+    
+    #product {
+        margin-top: 32px;
+    }
+    
+    #product h2 {
+        text-decoration: underline;
+    }
+    
+    .conteudo {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding: 16px;
+    }
+}
